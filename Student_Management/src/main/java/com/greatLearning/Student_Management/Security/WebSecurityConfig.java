@@ -35,11 +35,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	public void configure(HttpSecurity http) throws Exception{
 		http.authorizeRequests()
-		.antMatchers("/","/student/save","/student/").hasAnyAuthority("user","admin")
+		.antMatchers("/","/student/add","/student/").hasAnyAuthority("user","admin")
 		.antMatchers("/student/update","/student/delete").hasAuthority("admin")
 		.anyRequest().authenticated()
 		.and()
-		.formLogin().loginProcessingUrl("/login").successForwardUrl("/student/list").permitAll()
+		.formLogin().loginProcessingUrl("/login").successForwardUrl("/student/").permitAll()
 		.and()
 		.logout().logoutSuccessUrl("/login").permitAll()
 		.and()

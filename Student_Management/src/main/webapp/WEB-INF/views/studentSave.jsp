@@ -21,9 +21,10 @@
 <body>
 	<div class="container">
 		<h3>Save Book</h3>
-		<form action="/Student_Management/student/save"
-			method="post">
-			<input type="hidden" name="id" value="${result.id}">
+		<form action="/Student_Management/student/save" method="post">
+			<a href="/LibraryManagement/logout"
+				class="btn btn-primary btn-sm mb-3 mx-auto"> Logout </a> <input
+				type="hidden" name="id" value="${result.id}">
 			<div class="form-inline">
 				<input type="text" name="name" value="${result.fullName}"
 					placeholder="Student Name" class="form-control mb-4 col-4">
@@ -39,8 +40,8 @@
 			<button type="submit" class="btn btn-info col-2">Submit</button>
 		</form>
 
-		<a href="/Student_Management/student/">Back to Print
-			Student Management Details</a>
+		<a href="/Student_Management/student/">Back to Print Student
+			Management Details</a>
 
 	</div>
 </body>

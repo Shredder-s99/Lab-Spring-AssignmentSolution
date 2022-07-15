@@ -18,7 +18,9 @@
 	<div class="container">
 		<h3>Student Management</h3>
 		<a href="/Student_Management/student/add"
-			class="btn btn-primary btn-sm mb-3">Add Student</a>
+			class="btn btn-primary btn-sm mb-3">Add Student</a> <a
+			href="/Student_Management/logout"
+			class="btn btn-primary btn-sm mb-3 mx-auto"> Logout </a>
 		<table class="table table-bordered table-striped">
 			<thead class="thead-dark">
 				<tr>
